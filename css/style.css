@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    background-color: rgb(44, 44, 94);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(197, 194, 191);
+}
+/*styles en el menu*/
+.header1{
+    background-color: rgb(197, 194, 191);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.header1-nav ul{
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.header1-nav > ul > li{
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    border-right: solid 1px rgb(89, 89, 145);
+    padding-right: 15px;
+    font-size: 20px;
+
+}
+nav ul > li >a{
+    display: block;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:aliceblue;
+    transition: all 0.3s;
+}
+.subsection-ul{
+    position: absolute;
+    display: none;
+    background-color: rgb(197, 194, 191);
+    width: 200%;
+}
+.subsection-ul li a{
+    display: block;
+    color: rgb(89, 89, 145);
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul li:hover .subsection-ul{
+    display: block;
+}
+#a-terapias, #a-contacto, #a-kinesio, #a-cursos, #inicio1, #a-rehab{
+    color: aliceblue;
+}
+/*style en Rehab*/
+.titulo-rehab{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.section-rehab{
+    display: grid;
+
+    column-gap: 5px;
+    grid-template-areas: 
+    "tecnica1 tecnica2 tecnica3 tecnica4";
+
+}
+.tecnica1{
+    grid-area: tecnica1;
+}
+.tecnica2{
+    grid-area: tecnica2;
+}
+.tecnica3{
+    grid-area: tecnica3;
+}
+.tecnica4{
+    grid-area: tecnica4;
+}
+.titulo-tecnica1, .titulo-tecnica2, .titulo-tecnica3, .titulo-tecnica4{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-tecnica1, .text-tecnica2, .text-tecnica3, .text-tecnica4{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*style en contacto*/
+form{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fieldset1{
+    padding: 10px;
+}
+
+.nombreyapellido{
+    margin-bottom: 10px;
+}
+.telefonoymail{
+    margin-bottom: 10px;
+}
+.especialidad{
+    margin-bottom: 10px;
+}
+.textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+.buttons{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styles en index*/
+.section2-h1{
+    color:aliceblue;
+    font-weight: bolder;
+
+}
+.section2{/*el contenido del index*/
+    margin-left: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 15px 15px;
+    grid-template-areas: 
+    "section2-text img-index"
+    "section2-text img-index";
+    margin-bottom: 25px;
+}
+
+.text-section2{
+    grid-area: section2-text;
+}
+.section2-text{
+    margin-bottom: 15px;
+    width: 85%;
+    margin-left: 10px;
+}
+.p-wakeboard{
+    margin-bottom: 15px;
+}
+.titulos-index{
+    width: fit-content;
+    margin-bottom: 15px;
+}
+.img-index{
+    grid-area: img-index;
+    display: grid;
+    grid-template-areas: 
+    "imgbacha imgjjoo"
+    "imgwake imglucenti";
+}
+.img-bacha, .img-jjoo, .img-wake, .img-lucenti{
+    width: 85%;
+}
+.img-jjoo{
+    width: 75%;
+}
+.img-lucenti{
+    width: 75%;
+}
+/*style en cursos*/
+.img-cursos{
+    margin: 10px;
+}
+/*style en kinesiologia*/
+.menukinesio {
+    background-color: rgb(197, 194, 191);
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.menukinesio li{
+    display: inline-block;
+    margin-left: 15;
+    padding: 10px;
+    color: rgb(44, 44, 94);
+    font-weight: bold;
+}
+.menukinesio li a{
+    text-decoration: none;
+}
+.section-kinesio{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+
+    grid-template-areas: 
+    "mep taping pold acupuntura";
+}
+.mep{
+    grid-area: mep;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.taping{
+    grid-area: taping;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto ;
+    
+} 
+.pold{
+    grid-area: pold;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto ;
+    
+} 
+.acupuntura{
+    grid-area: acupuntura;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto ;
+    
+} 
+.uea{color: aliceblue;}
+.article-acupuntura{
+    margin-top: 10px;
+}
+.article-acupuntura p{
+    width: 75%;
+}
+/*styles en evaluaciones*/
+.evaluaciones{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas: 
+    "lesiones articulaciones articulaciones articulaciones"
+    "vendajes vendajes vendajes vendajes"
+    "vendajes vendajes vendajes vendajes";
+}
+.lesiones{
+    grid-area: lesiones;
+    padding: 10px;
+}
+.titulo-articulaciones{
+    color: aliceblue;
+}
+.titulo-lesionescomunes{
+    color: aliceblue;
+}
+.articulaciones{
+    grid-area: articulaciones;
+    margin-left: 50px;
+    width: 80%;
+}
+.vendajes{
+    grid-area: vendajes;
+}
+.titulo-vendajes{
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 25px;
+color: aliceblue;
+}
+
+.vendaje1, .vendaje2, .vendaje3{
+    width: 25%;
+    margin-left: 25px;;
+    
+}
+
+/*styles en el footer*/
+footer{
+    margin-top: 25px;
+    background-color:  rgb(197, 194, 191);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.links{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.img-ig{
+    height: 20px;
+    width: 20px;
+}
+.img-wpp{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+.img-email{    
+    height: 15px;
+    width: 20px;
+    margin-left: 10px;
+}
+.animate_bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+/*responsive en max 768px*/
+@media screen and (max-width:768px){
+    /*styles en kinesiodepo*/
+    .kinesiodepo{
+        margin-bottom: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+
+        grid-template-areas: 
+        "lesiones articulaciones articulaciones articulaciones"
+        "lesiones articulaciones articulaciones articulaciones"
+
+        "vendajes vendajes vendajes vendajes"
+        "vendajes vendajes vendajes vendajes"
+    }
+    .vendajes{
+        grid-area: vendajes;
+        display: grid;
+        grid-template-areas: 
+        "titulo-vendajes"
+        "videosvendajes"
+        "videosvendajes"
+        "videosvendajes";
+    }
+    .titulo-vendajes{
+        grid-area: titulo-vendajes;
+    }
+    .videosvendajes{
+        grid-area: videosvendajes;
+    }
+    .vendaje1, .vendaje2, .vendaje3{
+        display: block;
+        width: auto;
+        margin-bottom: 15px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .articulaciones{
+        grid-area: articulaciones;
+        margin-left: 50px;
+        width: 80%;
+    }
+/*styles en menu*/
+    .header1{
+        width: 100%;
+    }
+
+    .header1-nav > ul > li{
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        border-right: solid 1px rgb(89, 89, 145);
+        padding-right: 5px;
+        font-size: 15px;}
+    
+/*styles en en index*/
+    .section2{
+        margin-left: 10px;
+        margin-top: 10px;
+        display: grid;
+        gap: 15px 15px;
+        grid-template-areas: 
+        "section2-text"
+        "section2-text"
+        "video1"
+        "video2";
+        margin-bottom: 25px;
+    }
+    .section2-text{
+        grid-area: section2-text;
+    }
+    .video1{
+        grid-area: video1;
+        height: 250px;
+        }
+    .video2{
+        grid-area: video2;
+        height: 250px;
+    }
+/*styles en el footer*/    
+    footer{
+        display: grid;
+        background-color: rgb(197, 194, 191);
+        width: 100%;
+    
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(44, 44, 94);
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(1,80px );
+        grid-template-areas: 
+        "volver-arriba instagram email";
+        margin-top: 50px;
+    }
+    .volver-arriba{
+        grid-area: volver-arriba;
+    }
+    .instagram{
+        grid-area: instagram;
+    }
+
+    .instagram h5{
+        display: inline-block;
+    }
+    .email{
+        grid-area: email;
+
+
+    }
+    .volver-arriba, .instagram, .email{
+    padding:15px 40px 15px 40px;
+    }
+/*styles en rehab*/
+.section-rehab{
+    display: grid;
+    column-gap: 5px;
+    grid-template-areas: 
+    "tecnica1 tecnica2" 
+    "tecnica3 tecnica4";
+    row-gap: 10px;
+}
+}
