@@ -22,6 +22,8 @@ body{
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
+    animation: backInLeft;
+    animation-duration: 1.5s;
 }
 .header1-nav ul{
     list-style: none;
@@ -86,6 +88,7 @@ nav ul li:hover .subsection-ul{
     height: 700px;
 }
 .botones{
+    margin-top: 15px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -160,6 +163,7 @@ form{
     margin-bottom: 20px;
 }
 .buttons{
+
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -169,6 +173,8 @@ form{
 .section2-h1{
     color:aliceblue;
     font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 25px;
 
 }
 .section2{/*el contenido del index*/
@@ -191,6 +197,9 @@ form{
     width: 85%;
     margin-left: 10px;
 }
+.contenido-section2{
+    margin-left: 30px;
+}
 .p-wakeboard{
     margin-bottom: 15px;
 }
@@ -205,15 +214,17 @@ form{
     "imgbacha imgjjoo"
     "imgwake imglucenti";
 }
-.img-bacha, .img-jjoo, .img-wake, .img-lucenti{
+.img-bacha, .img-wake{
     width: 85%;
+    animation: fadeInDown;
+    animation-duration: 1s;
 }
-.img-jjoo{
+.img-jjoo, .img-lucenti{
     width: 75%;
+    animation: fadeInDown;
+    animation-duration: 1s;
 }
-.img-lucenti{
-    width: 75%;
-}
+
 /*style en cursos*/
 .img-cursos{
     margin: 10px;
