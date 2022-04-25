@@ -35,7 +35,6 @@ body{
     border-right: solid 1px rgb(89, 89, 145);
     padding-right: 15px;
     font-size: 20px;
-
 }
 nav ul > li >a{
     display: block;
@@ -64,6 +63,41 @@ nav ul li:hover .subsection-ul{
 }
 #a-terapias, #a-contacto, #a-kinesio, #a-cursos, #inicio1, #a-rehab{
     color: aliceblue;
+}
+/*styles en cursos*/
+.section-cursos{
+    display: grid;
+    grid-template-areas: 
+    "curso-anato curso-tnf";
+}
+.titulo-curso-anato, .titulo-curso-tnf{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.imgcurso, .imgtnf{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-tnf{
+    width: 700px;
+    height: 700px;
+}
+.botones{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.masinfo, .comprar{
+    padding: 5px;
+}
+.curso-anato{
+    grid-area: curso-anato;
+}
+.curso-tnf{
+    grid-area: curso-tnf;
 }
 /*style en Rehab*/
 .titulo-rehab{
