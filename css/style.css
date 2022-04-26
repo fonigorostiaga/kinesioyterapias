@@ -7,7 +7,7 @@
 }
 body{
 
-    background-color: rgb(44, 44, 94);
+    background-color: rgb(89, 89, 145);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -60,9 +60,6 @@ nav ul li a:hover{
     color: rgb(89, 89, 145);
     text-decoration: none;
     padding: 5px;
-}
-nav ul li:hover .subsection-ul{
-    display: block;
 }
 #a-terapias, #a-contacto, #a-kinesio, #a-cursos, #inicio1, #a-rehab{
     color: aliceblue;
@@ -171,6 +168,14 @@ nav ul li:hover .subsection-ul{
 }
 
 /*styles en index*/
+.card{
+    background-color: rgb(44, 44, 94);
+}
+.subtitulocard{
+    font-weight: bold;
+    color: antiquewhite;
+}
+
 .section2-h1{
     color:aliceblue;
     font-weight: bolder;
@@ -210,20 +215,12 @@ nav ul li:hover .subsection-ul{
 }
 .img-index{
     grid-area: img-index;
-    display: grid;
-    grid-template-areas: 
-    "imgbacha imgjjoo"
-    "imgwake imglucenti";
 }
-.img-bacha, .img-wake{
-    width: 85%;
-    animation: fadeInDown;
-    animation-duration: 1s;
-}
-.img-jjoo, .img-lucenti{
-    width: 75%;
-    animation: fadeInDown;
-    animation-duration: 1s;
+.titulo-img{
+    background-color: rgb(89, 89, 145);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*style en cursos*/
