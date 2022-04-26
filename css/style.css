@@ -41,6 +41,7 @@ body{
 nav ul > li >a{
     display: block;
     text-decoration: none;
+    color: rgb(89, 89, 145);
 }
 nav ul li a:hover{
     color:aliceblue;
@@ -140,31 +141,31 @@ nav ul li:hover .subsection-ul{
     margin-left: auto;
 }
 /*style en contacto*/
-form{
+
+.nombreyapellido{
     width: fit-content;
+    display: inline-block;
+    width: 49%;
+}
+.divcontenedornombreyapellido{
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-.fieldset1{
-    padding: 10px;
+.divcontenedormailyespecialidad{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mailadress{
+    width: 60%;
 }
 
-.nombreyapellido{
-    margin-bottom: 10px;
+.mailespecialidad{
+    display: inline-block;
 }
-.telefonoymail{
-    margin-bottom: 10px;
-}
-.especialidad{
-    margin-bottom: 10px;
-}
-.textarea{
-    display: block;
-    margin-bottom: 20px;
-}
-.buttons{
-
-    width: fit-content;
+.areadetexto{
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
