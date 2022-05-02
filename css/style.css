@@ -25,45 +25,21 @@ body{
     animation: backInLeft;
     animation-duration: 1.5s;
 }
+
 .header1-nav ul{
     list-style: none;
     font-weight: bold;
-    text-align: center;
 }
-.header1-nav > ul > li{
-    display: inline-block;
-    position: relative;
-    margin: 15px;
-    border-right: solid 1px rgb(89, 89, 145);
-    padding-right: 15px;
-    font-size: 20px;
-}
-nav ul > li >a{
-    display: block;
-    text-decoration: none;
-    color: rgb(89, 89, 145);
-}
+
+
 nav ul li a:hover{
     color:aliceblue;
     transition: all 0.3s;
     animation: fadeIn;
     animation-duration: 1s;
 }
-.subsection-ul{
-    position: absolute;
-    display: none;
-    background-color: rgb(197, 194, 191);
-    width: 200%;
-}
-.subsection-ul li a{
-    display: block;
-    color: rgb(89, 89, 145);
-    text-decoration: none;
-    padding: 5px;
-}
-#a-terapias, #a-contacto, #a-kinesio, #a-cursos, #inicio1, #a-rehab{
-    color: aliceblue;
-}
+
+
 /*styles en cursos*/
 .section-cursos{
     display: grid;
@@ -183,17 +159,7 @@ nav ul li a:hover{
     margin-bottom: 25px;
 
 }
-.section2{/*el contenido del index*/
-    margin-left: 10px;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    gap: 15px 15px;
-    grid-template-areas: 
-    "section2-text img-index"
-    "section2-text img-index";
-    margin-bottom: 25px;
-}
+
 
 .text-section2{
     grid-area: section2-text;
@@ -302,125 +268,3 @@ footer{
     margin-left: 10px;
 }
 
-/*responsive en max 768px*/
-@media screen and (max-width:768px){
-    /*styles en kinesiodepo*/
-    .kinesiodepo{
-        margin-bottom: 25px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-
-        grid-template-areas: 
-        "lesiones articulaciones articulaciones articulaciones"
-        "lesiones articulaciones articulaciones articulaciones"
-
-        "vendajes vendajes vendajes vendajes"
-        "vendajes vendajes vendajes vendajes"
-    }
-    .vendajes{
-        grid-area: vendajes;
-        display: grid;
-        grid-template-areas: 
-        "titulo-vendajes"
-        "videosvendajes"
-        "videosvendajes"
-        "videosvendajes";
-    }
-    .titulo-vendajes{
-        grid-area: titulo-vendajes;
-    }
-    .videosvendajes{
-        grid-area: videosvendajes;
-    }
-    .vendaje1, .vendaje2, .vendaje3{
-        display: block;
-        width: auto;
-        margin-bottom: 15px ;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .articulaciones{
-        grid-area: articulaciones;
-        margin-left: 50px;
-        width: 80%;
-    }
-/*styles en menu*/
-    .header1{
-        width: 100%;
-    }
-
-    .header1-nav > ul > li{
-        display: inline-block;
-        position: relative;
-        text-align: left;
-        border-right: solid 1px rgb(89, 89, 145);
-        padding-right: 5px;
-        font-size: 15px;}
-    
-/*styles en en index*/
-    .section2{
-        margin-left: 10px;
-        margin-top: 10px;
-        display: grid;
-        gap: 15px 15px;
-        grid-template-areas: 
-        "section2-text"
-        "section2-text"
-        "video1"
-        "video2";
-        margin-bottom: 25px;
-    }
-    .section2-text{
-        grid-area: section2-text;
-    }
-    .video1{
-        grid-area: video1;
-        height: 250px;
-        }
-    .video2{
-        grid-area: video2;
-        height: 250px;
-    }
-/*styles en el footer*/    
-    footer{
-        display: grid;
-        background-color: rgb(197, 194, 191);
-        width: 100%;
-    
-        margin-left: auto;
-        margin-right: auto;
-        color: rgb(44, 44, 94);
-        grid-template-columns: repeat(3, 30%);
-        grid-template-rows: repeat(1,80px );
-        grid-template-areas: 
-        "volver-arriba instagram email";
-        margin-top: 50px;
-    }
-    .volver-arriba{
-        grid-area: volver-arriba;
-    }
-    .instagram{
-        grid-area: instagram;
-    }
-
-    .instagram h5{
-        display: inline-block;
-    }
-    .email{
-        grid-area: email;
-
-
-    }
-    .volver-arriba, .instagram, .email{
-    padding:15px 40px 15px 40px;
-    }
-/*styles en rehab*/
-.section-rehab{
-    display: grid;
-    column-gap: 5px;
-    grid-template-areas: 
-    "tecnica1 tecnica2" 
-    "tecnica3 tecnica4";
-    row-gap: 10px;
-}
-}
