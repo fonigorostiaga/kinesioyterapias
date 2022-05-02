@@ -228,68 +228,8 @@ nav ul li a:hover{
     margin: 10px;
 }
 /*style en kinesiologia*/
-.menukinesio {
-    background-color: rgb(197, 194, 191);
-    list-style: none;
-    margin-right: auto;
-    margin-left: auto;
-    width: 65%;
-    margin-bottom: 30px;
-    text-align: center;    
-}
-.menukinesio li{
-    display: inline-block;
-    margin-left: 15;
-    padding: 10px;
-    color: rgb(44, 44, 94);
-    font-weight: bold;
-}
-.menukinesio li a{
-    text-decoration: none;
-}
-.section-kinesio{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
 
-    grid-template-areas: 
-    "mep taping pold acupuntura";
-}
-.mep{
-    grid-area: mep;
-    width: 75%;
-    margin-left: auto;
-    margin-right:auto ;
-}
-.taping{
-    grid-area: taping;
-    width: 75%;
-    margin-left: auto;
-    margin-right:auto ;
-    
-} 
-.pold{
-    grid-area: pold;
-    width: 75%;
-    margin-left: auto;
-    margin-right:auto ;
-    
-} 
-.acupuntura{
-    grid-area: acupuntura;
-    width: 75%;
-    margin-left: auto;
-    margin-right:auto ;
-    
-} 
-.uea{color: aliceblue;}
-.article-acupuntura{
-    margin-top: 10px;
-}
-.article-acupuntura p{
-    width: 75%;
-}
+
 /*styles en evaluaciones*/
 .evaluaciones{
     display: grid;
