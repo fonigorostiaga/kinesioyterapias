@@ -193,7 +193,11 @@ nav ul li a:hover{
 .img-cursos{
     margin: 10px;
 }
-/*style en kinesiologia*/
+.img-tnf, .img-cursoanato{
+    width: 100%;
+    height: 100%;
+
+}
 
 
 /*styles en evaluaciones*/
@@ -268,3 +272,33 @@ footer{
     margin-left: 10px;
 }
 
+@media screen and (max-width:768px){
+    .nombreyapellido{
+        width: fit-content;
+        display: inline-block;
+        width: 95%;
+    }
+    .divcontenedornombreyapellido{
+        width: fit fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .divcontenedormailyespecialidad{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mailadress{
+        width: 95%;
+    }
+    
+    .mailespecialidad{
+        display: inline-block;
+    }
+    .areadetexto{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
