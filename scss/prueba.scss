@@ -1,0 +1,23 @@
+@import "partials/footer";
+@import "partials/header";
+@import "partials/index";
+@import "partials/cursos";
+@import "partials/evaluaciones";
+@import "partials/contacto";
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-color: rgb(89, 89, 145);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(197, 194, 191);
+}

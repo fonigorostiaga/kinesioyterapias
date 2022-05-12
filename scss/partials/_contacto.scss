@@ -1,0 +1,66 @@
+.divcontenedornombreyapellido{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    .nombreyapellido{
+        width: fit-content;
+        display: inline-block;
+        width: 49%;
+    }
+}
+.divcontenedormailyespecialidad{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    .mailadress{
+        width: 60%;
+    }
+    .mailespecialidad{
+        display: inline-block;
+    }
+}
+.areadetexto{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botones{
+    margin-top: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media screen and (max-width:768px){
+
+    .divcontenedornombreyapellido{
+        width: fit fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        .nombreyapellido{
+            width: fit-content;
+            display: inline-block;
+            width: 95%;
+        }
+    }
+    .divcontenedormailyespecialidad{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        .mailadress{
+            width: 95%;
+        }
+        
+        .mailespecialidad{
+            display: inline-block;
+        }
+    }
+
+    .areadetexto{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

@@ -1,304 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans:wght@300&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-body{
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans:wght@300&display=swap");
+footer {
+  margin-top: 25px;
+  background-color: #c5c2bf;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: backInLeft;
+  animation-duration: 1.5s; }
+  footer .links {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+    footer .links .img-ig {
+      height: 20px;
+      width: 20px; }
+    footer .links .img-wpp {
+      height: 20px;
+      width: 20px;
+      margin-left: 10px; }
+    footer .links .img-email {
+      height: 15px;
+      width: 20px;
+      margin-left: 10px; }
 
-    background-color: rgb(89, 89, 145);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(197, 194, 191);
-}
-/*styles en el menu*/
-.header1{
-    background-color: rgb(197, 194, 191);
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-family: 'Open Sans', sans-serif;
-    animation: backInLeft;
-    animation-duration: 1.5s;
-}
-
-.header1-nav ul{
+.header1 {
+  background-color: #c5c2bf;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Open Sans', sans-serif;
+  animation: backInLeft;
+  animation-duration: 1.5s; }
+  .header1 .header1-nav ul {
     list-style: none;
+    font-weight: bold; }
+
+nav ul li a:hover {
+  color: aliceblue;
+  transition: all 0.3s;
+  animation: fadeIn;
+  animation-duration: 1s; }
+
+.section2 .card {
+  background-color: #2c2c5e; }
+  .section2 .card .subtitulocard {
     font-weight: bold;
-}
+    color: antiquewhite; }
 
+.section2 .img-ig {
+  height: 20px;
+  width: 20px; }
 
-nav ul li a:hover{
-    color:aliceblue;
-    transition: all 0.3s;
-    animation: fadeIn;
-    animation-duration: 1s;
-}
+.section2 .img-wpp {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px; }
 
+.section2 .img-email {
+  height: 15px;
+  width: 20px;
+  margin-left: 10px; }
 
-/*styles en cursos*/
-.section-cursos{
-    display: grid;
-    grid-template-areas: 
-    "curso-anato curso-tnf";
-}
-.titulo-curso-anato, .titulo-curso-tnf{
+.titulo-img {
+  background-color: #595991;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto; }
+
+.section-cursos {
+  display: grid;
+  grid-template-areas: "curso-anato curso-tnf"; }
+  .section-cursos .curso-anato {
+    grid-area: curso-anato; }
+  .section-cursos .curso-tnf {
+    grid-area: curso-tnf; }
+  .section-cursos .titulo-curso-anato, .section-cursos .titulo-curso-tnf {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
-}
-.imgcurso, .imgtnf{
+    margin-bottom: 15px; }
+  .section-cursos .imgcurso, .section-cursos .imgtnf {
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;
-}
-.img-tnf{
-    width: 700px;
-    height: 700px;
-}
-.botones{
+    margin-right: auto; }
+  .section-cursos .botones {
     margin-top: 15px;
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;
-}
-.masinfo, .comprar{
-    padding: 5px;
-}
-.curso-anato{
-    grid-area: curso-anato;
-}
-.curso-tnf{
-    grid-area: curso-tnf;
-}
-/*style en Rehab*/
-.titulo-rehab{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-}
-.section-rehab{
-    display: grid;
-
-    column-gap: 5px;
-    grid-template-areas: 
-    "tecnica1 tecnica2 tecnica3 tecnica4";
-
-}
-.tecnica1{
-    grid-area: tecnica1;
-}
-.tecnica2{
-    grid-area: tecnica2;
-}
-.tecnica3{
-    grid-area: tecnica3;
-}
-.tecnica4{
-    grid-area: tecnica4;
-}
-.titulo-tecnica1, .titulo-tecnica2, .titulo-tecnica3, .titulo-tecnica4{
-    width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
-}
-.text-tecnica1, .text-tecnica2, .text-tecnica3, .text-tecnica4{
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-}
-/*style en contacto*/
-
-.nombreyapellido{
-    width: fit-content;
-    display: inline-block;
-    width: 49%;
-}
-.divcontenedornombreyapellido{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.divcontenedormailyespecialidad{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.mailadress{
-    width: 60%;
-}
-
-.mailespecialidad{
-    display: inline-block;
-}
-.areadetexto{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*styles en index*/
-.card{
-    background-color: rgb(44, 44, 94);
-}
-.subtitulocard{
-    font-weight: bold;
-    color: antiquewhite;
-}
-
-.section2-h1{
-    color:aliceblue;
-    font-weight: bolder;
-    font-size: xx-large;
-    margin-bottom: 25px;
-
-}
-
-
-.text-section2{
-    grid-area: section2-text;
-}
-.section2-text{
-    margin-bottom: 15px;
-    width: 85%;
-    margin-left: 10px;
-}
-.contenido-section2{
-    margin-left: 30px;
-}
-.p-wakeboard{
-    margin-bottom: 15px;
-}
-.titulos-index{
-    width: fit-content;
-    margin-bottom: 15px;
-}
-.img-index{
-    grid-area: img-index;
-}
-.titulo-img{
-    background-color: rgb(89, 89, 145);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*style en cursos*/
-.img-cursos{
-    margin: 10px;
-}
-.img-tnf, .img-cursoanato{
+    margin-right: auto; }
+    .section-cursos .botones .masinfo, .section-cursos .botones .comprar {
+      padding: 5px; }
+  .section-cursos .img-tnf, .section-cursos .img-cursoanato {
+    width: 635px;
+    height: 635px;
     width: 100%;
-    height: 100%;
+    height: 100%; }
+  .section-cursos .img-cursos {
+    margin: 10px; }
 
-}
+.divcontenedornombreyapellido {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  .divcontenedornombreyapellido .nombreyapellido {
+    width: fit-content;
+    display: inline-block;
+    width: 49%; }
 
+.divcontenedormailyespecialidad {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  .divcontenedormailyespecialidad .mailadress {
+    width: 60%; }
+  .divcontenedormailyespecialidad .mailespecialidad {
+    display: inline-block; }
 
-/*styles en evaluaciones*/
-.evaluaciones{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(3, 250px);
-    grid-template-areas: 
-    "lesiones articulaciones articulaciones articulaciones"
-    "vendajes vendajes vendajes vendajes"
-    "vendajes vendajes vendajes vendajes";
-}
-.lesiones{
-    grid-area: lesiones;
-    padding: 10px;
-}
-.titulo-articulaciones{
-    color: aliceblue;
-}
-.titulo-lesionescomunes{
-    color: aliceblue;
-}
-.articulaciones{
-    grid-area: articulaciones;
-    margin-left: 50px;
-    width: 80%;
-}
-.vendajes{
-    grid-area: vendajes;
-}
-.titulo-vendajes{
-width: fit-content;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 25px;
-color: aliceblue;
-}
+.areadetexto {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
 
-.vendaje1, .vendaje2, .vendaje3{
-    width: 25%;
-    margin-left: 25px;;
-    
-}
+.botones {
+  margin-top: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto; }
 
-/*styles en el footer*/
-footer{
-    margin-top: 25px;
-    background-color:  rgb(197, 194, 191);
-    width: 75%;
+@media screen and (max-width: 768px) {
+  .divcontenedornombreyapellido {
+    width: fit fit-content;
     margin-left: auto;
-    margin-right: auto;
-    animation: backInLeft;
-    animation-duration: 1.5s;
-}
-.links{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-.img-ig{
-    height: 20px;
-    width: 20px;
-}
-.img-wpp{
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
-}
-.img-email{    
-    height: 15px;
-    width: 20px;
-    margin-left: 10px;
-}
+    margin-right: auto; }
+    .divcontenedornombreyapellido .nombreyapellido {
+      width: fit-content;
+      display: inline-block;
+      width: 95%; }
+  .divcontenedormailyespecialidad {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    .divcontenedormailyespecialidad .mailadress {
+      width: 95%; }
+    .divcontenedormailyespecialidad .mailespecialidad {
+      display: inline-block; }
+  .areadetexto {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; } }
 
-@media screen and (max-width:768px){
-    .nombreyapellido{
-        width: fit-content;
-        display: inline-block;
-        width: 95%;
-    }
-    .divcontenedornombreyapellido{
-        width: fit fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .divcontenedormailyespecialidad{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .mailadress{
-        width: 95%;
-    }
-    
-    .mailespecialidad{
-        display: inline-block;
-    }
-    .areadetexto{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #595991;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #c5c2bf; }

@@ -1,0 +1,43 @@
+.section-cursos{
+    display: grid;
+    grid-template-areas: 
+    "curso-anato curso-tnf";
+    .curso-anato{
+        grid-area: curso-anato;
+    }
+    .curso-tnf{
+        grid-area: curso-tnf;
+    }
+    .titulo-curso-anato, .titulo-curso-tnf{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    .imgcurso, .imgtnf{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .botones{
+        margin-top: 15px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        .masinfo, .comprar{
+            padding: 5px;
+        }
+    }
+    .img-tnf, .img-cursoanato{
+        width: 635px;
+        height: 635px;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .img-cursos{
+        margin: 10px;
+    }
+    
+}
+
