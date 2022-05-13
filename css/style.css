@@ -4,10 +4,14 @@ footer {
   margin-top: 25px;
   background-color: #c5c2bf;
   width: 75%;
+  animation: backInLeft;
+  animation-duration: 1.5s;
+  position: absolute;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  animation: backInLeft;
-  animation-duration: 1.5s; }
+  right: 0;
+  left: 0; }
   footer .links {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -37,12 +41,11 @@ footer {
   .header1 .header1-nav ul {
     list-style: none;
     font-weight: bold; }
-
-nav ul li a:hover {
-  color: aliceblue;
-  transition: all 0.3s;
-  animation: fadeIn;
-  animation-duration: 1s; }
+    .header1 .header1-nav ul li a:hover {
+      color: aliceblue;
+      transition: all 0.3s;
+      animation: fadeIn;
+      animation-duration: 1s; }
 
 .section2 .card {
   background-color: #2c2c5e; }
@@ -87,7 +90,6 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto; }
   .section-cursos .botones {
-    margin-top: 15px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto; }
@@ -132,12 +134,12 @@ nav ul li a:hover {
 
 @media screen and (max-width: 768px) {
   .divcontenedornombreyapellido {
-    width: fit fit-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto; }
     .divcontenedornombreyapellido .nombreyapellido {
-      width: fit-content;
-      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
       width: 95%; }
   .divcontenedormailyespecialidad {
     width: 50%;
@@ -158,8 +160,11 @@ nav ul li a:hover {
   margin: 0; }
 
 body {
+  min-height: 95vh;
   background-color: #595991;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
-  color: #c5c2bf; }
+  color: #c5c2bf;
+  position: relative;
+  padding-bottom: 100px; }

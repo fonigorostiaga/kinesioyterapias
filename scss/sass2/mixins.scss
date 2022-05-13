@@ -1,0 +1,12 @@
+
+@mixin flex-space {
+    display: flex;
+    justify-content: space-around;
+
+}
+@mixin anclasHeader {
+    color:aliceblue;
+    transition: all 0.3s;
+    animation: fadeIn;
+    animation-duration: 1s    
+}

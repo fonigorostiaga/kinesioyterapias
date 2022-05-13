@@ -14,10 +14,12 @@
 }
 
 body{
-
+    min-height: 95vh;
     background-color: rgb(89, 89, 145);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     color: rgb(197, 194, 191);
+    position: relative;
+    padding-bottom: 100px;
 }

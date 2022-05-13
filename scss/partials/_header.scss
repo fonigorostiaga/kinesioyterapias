@@ -1,8 +1,11 @@
+@import "../sass2/maps.scss";
+@import "../sass2/mixins.scss";
 .header1{
+
     background-color: rgb(197, 194, 191);
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
@@ -13,18 +16,12 @@
         ul{
         list-style: none;
         font-weight: bold;
-        }
-    }
-}
-nav {
-    ul {
-        li{
-            a:hover{
-                color:aliceblue;
-                transition: all 0.3s;
-                animation: fadeIn;
-                animation-duration: 1s;
+            li{
+                a:hover{
+                    @include anclasHeader;
+                }
             }
         }
     }
+
 }

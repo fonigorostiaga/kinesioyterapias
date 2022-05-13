@@ -1,7 +1,8 @@
+@import "../sass2/maps.scss";
 .divcontenedornombreyapellido{
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
     .nombreyapellido{
         width: fit-content;
         display: inline-block;
@@ -10,8 +11,8 @@
 }
 .divcontenedormailyespecialidad{
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
     .mailadress{
         width: 60%;
     }
@@ -21,33 +22,33 @@
 }
 .areadetexto{
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
 }
 .botones{
     margin-top: 15px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: map-get($alignment, anchoFit );
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
 
 }
 
 @media screen and (max-width:768px){
 
     .divcontenedornombreyapellido{
-        width: fit fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        width: map-get($alignment, anchoFit );
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
         .nombreyapellido{
-            width: fit-content;
-            display: inline-block;
+            margin-left: map-get($alignment, margenL);
+            margin-right: map-get($alignment, margenR );
             width: 95%;
         }
     }
     .divcontenedormailyespecialidad{
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
         .mailadress{
             width: 95%;
         }
@@ -59,8 +60,8 @@
 
     .areadetexto{
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
     }
     
 }

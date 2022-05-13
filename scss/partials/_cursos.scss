@@ -1,3 +1,4 @@
+@import "../sass2/maps.scss";
 .section-cursos{
     display: grid;
     grid-template-areas: 
@@ -9,21 +10,20 @@
         grid-area: curso-tnf;
     }
     .titulo-curso-anato, .titulo-curso-tnf{
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        width: map-get($alignment, anchoFit );
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
         margin-bottom: 15px;
     }
     .imgcurso, .imgtnf{
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        width: map-get($alignment, anchoFit );
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
     } 
     .botones{
-        margin-top: 15px;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        width: map-get($alignment, anchoFit );
+        margin-left: map-get($alignment, margenL);
+        margin-right: map-get($alignment, margenR );
         .masinfo, .comprar{
             padding: 5px;
         }

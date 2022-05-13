@@ -1,9 +1,9 @@
+@import "../sass2/maps.scss";
 footer{
     margin-top: 25px;
     background-color:  rgb(197, 194, 191);
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+
     animation: backInLeft;
     animation-duration: 1.5s;
     .links{
@@ -25,4 +25,11 @@ footer{
             margin-left: 10px;
         }
     }
+
+    position: absolute;
+    bottom:0;
+    margin-left: map-get($alignment, margenL);
+    margin-right: map-get($alignment, margenR );
+    right: 0;
+    left: 0;
 }
