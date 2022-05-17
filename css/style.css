@@ -106,6 +106,10 @@ footer {
   .section-cursos .img-cursos {
     margin: 10px; }
 
+.img-tnf {
+  width: 635px;
+  height: 635px; }
+
 .divcontenedornombreyapellido {
   width: 50%;
   margin-left: auto;
