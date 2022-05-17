@@ -7,12 +7,11 @@
     margin-left: map-get($alignment, margenL);
     margin-right: map-get($alignment, margenR );
     margin-top: 25px;
+    animation: backInLeft;
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
-    animation: backInLeft;
     animation-duration: 1.5s;
     .header1-nav{
-
         ul{
         list-style: none;
         font-weight: bold;

@@ -36,7 +36,7 @@
 @media screen and (max-width:768px){
 
     .divcontenedornombreyapellido{
-        width: map-get($alignment, anchoFit );
+        width: 95%;
         margin-left: map-get($alignment, margenL);
         margin-right: map-get($alignment, margenR );
         .nombreyapellido{
@@ -46,7 +46,7 @@
         }
     }
     .divcontenedormailyespecialidad{
-        width: 50%;
+        width: 95%;
         margin-left: map-get($alignment, margenL);
         margin-right: map-get($alignment, margenR );
         .mailadress{
@@ -59,7 +59,7 @@
     }
 
     .areadetexto{
-        width: 50%;
+        width:95%;
         margin-left: map-get($alignment, margenL);
         margin-right: map-get($alignment, margenR );
     }

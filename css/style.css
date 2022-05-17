@@ -34,9 +34,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
+  animation: backInLeft;
   margin-bottom: 25px;
   font-family: 'Open Sans', sans-serif;
-  animation: backInLeft;
   animation-duration: 1.5s; }
   .header1 .header1-nav ul {
     list-style: none;
@@ -89,6 +89,9 @@ footer {
     width: fit-content;
     margin-left: auto;
     margin-right: auto; }
+    .section-cursos .imgcurso:hover, .section-cursos .imgtnf:hover {
+      transform: scale(1.05, 1.05);
+      transition: 0.5s; }
   .section-cursos .botones {
     width: fit-content;
     margin-left: auto;
@@ -134,7 +137,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .divcontenedornombreyapellido {
-    width: fit-content;
+    width: 95%;
     margin-left: auto;
     margin-right: auto; }
     .divcontenedornombreyapellido .nombreyapellido {
@@ -142,7 +145,7 @@ footer {
       margin-right: auto;
       width: 95%; }
   .divcontenedormailyespecialidad {
-    width: 50%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto; }
     .divcontenedormailyespecialidad .mailadress {
@@ -150,9 +153,39 @@ footer {
     .divcontenedormailyespecialidad .mailespecialidad {
       display: inline-block; }
   .areadetexto {
-    width: 50%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto; } }
+
+.titulo-galeria {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto; }
+  .titulo-galeria .tituloGaleria {
+    color: #394757;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; }
+
+.galeria img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px; }
+  .galeria img:hover {
+    border: solid #f7f7f7;
+    transform: scale(1.15, 1.15); }
+
+.galeria .img-taping12, .galeria .img-taping3 {
+  height: 250px;
+  vertical-align: center; }
+
+.galeria .col-lg-3, .galeria .col-lg-4 {
+  padding: 25px; }
+
+.img-kinesio {
+  width: 95%;
+  height: 350px;
+  border-radius: 15px; }
 
 * {
   box-sizing: border-box;
