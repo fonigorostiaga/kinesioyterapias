@@ -50,6 +50,14 @@ footer {
       transition: all 0.3s;
       animation: fadeIn;
       animation-duration: 1s; }
+  .header1 .img-turnos {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px; }
+  .header1 a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; }
 
 .section2 .card {
   background-color: #2c2c5e; }
